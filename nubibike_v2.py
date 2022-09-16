@@ -46,9 +46,9 @@ def main():
     result = []
     result = nubiBike(result)
     nubi_tbl = pd.DataFrame(result, columns=(
-        'num', 'name', 'location'))
+        '번호', '터미널명', '주소'))
     nubi_tbl.to_csv('nubibike.csv',
-                    encoding='cp949', mode='w', index=True)
+                    encoding='cp949', mode='w', index=False)
 
 
 if __name__ == '__main__':
