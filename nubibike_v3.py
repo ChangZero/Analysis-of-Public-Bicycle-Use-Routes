@@ -29,9 +29,11 @@ def nubiBike(result):
                     'td', class_='list_terminal_name').get_text().strip()
                 location = elem.find(
                     'td', class_='list_terminal_location').get_text()
+                normal = elem.find(
+                    'td', class_='list_terminal_normal').get_text()
                 # print(name)
                 # print(location)
-                result.append([num] + [name] + [location])
+                result.append([num] + [name] + [location] + [normal])
             except Exception as e:
                 continue
 
@@ -46,7 +48,7 @@ def main():
     result = []
     result = nubiBike(result)
     nubi_tbl = pd.DataFrame(result, columns=(
-        '번호', '터미널명', '주소'))
+        '번호', '터미널명', '주소', '보관대수'))
     nubi_tbl.to_csv('nubibike.csv',
                     encoding='cp949', mode='w', index=False)
 
