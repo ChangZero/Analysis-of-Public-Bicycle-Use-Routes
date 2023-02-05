@@ -2,7 +2,7 @@
 
 -   예선 통과(상위 9위 이내)
 
-## 1.Project Abstract
+## 1. Project Abstract
 
 ### 프로젝트 개요
 
@@ -25,7 +25,7 @@
 -   Folium
 -   Tableau
 
-## 3.최종보고서
+## 3. 최종보고서
 
 ## 4. License
 
